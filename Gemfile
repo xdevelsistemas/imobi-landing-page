@@ -1,8 +1,6 @@
 source 'https://rubygems.org'
 
-Object.send :remove_const, :Config
-Config = RbConfig
-
+gem 'em-dir-watcher' , :git => 'git://github.com/claytonsilva/em-dir-watcher.git'
 gem 'middleman', '~> 3.2.0'
 gem 'bundler'
 gem 'builder'
