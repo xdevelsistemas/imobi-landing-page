@@ -1,0 +1,41 @@
+body a {
+	color:#9C3E09;
+}
+
+#header nav a.link-active,
+.highlight,
+.ts-team .profile .members-caption,
+#header.horizontal #nav a.link-active {
+	color: #9C3E09;
+}
+
+
+.ts-section .box a.box-icon,
+.btn-first,
+.ts-services .padder .big-icon,
+.ts-team .profile:hover .profile-info,
+.ts-portfolio header .sub-menu span.active, 
+.ts-portfolio header .sub-menu span:hover,
+.ts-news .box .date,
+.ts-price-plan .plan.best .title,
+.media-container #slider-container .play,
+#header.horizontal .logo,
+#header.horizontal .small-nav {
+	background:  #9C3E09;
+}
+
+.ts-services .padder .big-icon:before {
+	border-top-color:#9C3E09;
+}
+
+.ts-timeline .timeline-list .list > li i {
+	background:  #9C3E09;
+}
+
+.ts-portfolio #portfolio-grid .item:hover .layer {
+	box-shadow: inset 0 0 100px 150px rgba(156, 62, 9, 0.9);
+}
+
+.btn-first:hover {
+	background: #9C3E09;
+}

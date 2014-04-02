@@ -1,0 +1,14 @@
+body {
+	overflow-x:hidden !important;
+	overflow-y:hidden !important;
+}
+
+#wrapper {
+	overflow:hidden;
+	position:relative;
+}
+
+.tse-section {
+	overflow:hidden;
+	position:relative;
+}
