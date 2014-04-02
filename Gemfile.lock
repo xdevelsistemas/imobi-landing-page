@@ -1,3 +1,10 @@
+GIT
+  remote: git://github.com/claytonsilva/em-dir-watcher.git
+  revision: cc48074cd68cbccdfee2c6c5fbb4f272e6b3c34f
+  branch: patch-1
+  specs:
+    em-dir-watcher (0.9.4)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -14,7 +21,6 @@ GEM
       chunky_png (~> 1.2)
       fssm (>= 0.2.7)
       sass (~> 3.2.17)
-    em-dir-watcher (0.9.4)
     em-websocket (0.5.0)
       eventmachine (>= 0.12.9)
       http_parser.rb (~> 0.5.3)
@@ -95,6 +101,7 @@ PLATFORMS
 DEPENDENCIES
   builder
   bundler
+  em-dir-watcher!
   livereload
   middleman (~> 3.2.0)
   syntax
