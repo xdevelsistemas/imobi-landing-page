@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]> <html class="ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html class=""> <!--<![endif]-->
+
+
+
+<head>
+  <head>
+    <title>Imobi - Sistema </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <!-- Importing Google Font "Merriweather"-->
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+
+    <!-- CSS -->
+    <link href="css/styles/style-blue.css" rel="stylesheet">
+    <link href="css/loader.css" rel="stylesheet">
+    <link href="css/plugins/animate.css" rel="stylesheet">
+    <link href="css/form.css" rel="stylesheet">
+    <link href="css/grid.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+
+
+    <!-- Plugin Css -->
+    <link href="css/plugins/colorbox.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+    <div id="loader">
+      <div id="circler"></div>
+      <img src="images/navkey.png" class="navkey" alt="">
+    </div>
+
+
+
+    <!-- Beggin wrapper -->
+    <div id="wrapper">
+      <!-- Begin Header Slider -->
+      <!--<section class="ts-section media-container fullscreen" id="home">
+        <div id="slider-container">
+          <div class="slider-bg "></div>
+          <div class="text-container">
+            <div class="container">
+                <h1>Tudo que precisa saber sobre o mercado imobiliário</h1>
+                <h3>Informações compartilhadas e confiáveis, acompanhando a dinâmica do mercado da construção civil </h3>
+                <a href="#" class="play icon-effect"><i class="icon-play-1"></i></a>
+            </div>
+          </div>
+        </div>
+
+        &lt;!&ndash; Video &ndash;&gt;
+        <div id="video-container">
+          <a href="#" class="stop-layer"></a>
+          <video id="the-video" preload="" controls="controls"   height="800" loop=1>
+            <source src="video/videoplayback.mp4" type="video/mp4">
+          </video>
+        </div>
+      </section>-->      <!-- End Header Slider -->
+
+      <!-- Header Navigation -->
+      <div id="header" class="animated fadeIn">
+        <div class="container">
+            <!-- Logo -->
+            <div class="logo">
+              <a href="#"> 
+                <img class="default" src="images/logo.png" alt=""> 
+                <img class="white" src="images/logo-white.png" alt="">
+              </a>
+            </div>
+               
+            <!-- Nav -->
+            <div class="small-nav">
+              <i class="icon-menu"></i>
+            </div>
+            <nav id="nav">
+              <!--<a href="#"><i class="icon-home"></i><span>Entrar</span> </a>-->
+              <a href="#about" class="link-active"><i class="icon-user"></i> <span>O que é Imobi?</span></a>
+              <a href="#services" class="services"><i class="icon-tools"></i> <span>O que fizemos</span></a>
+              <a href="#patrocinadores"><i class="icon-users"></i> <span>Quem Acredita</span></a>
+              <a href="#realizadores"><i class="icon-users"></i> <span>Quem realiza</span></a>
+              <!--<a href="#team"><i class="icon-users"></i> <span>Quem desenvolve</span></a>-->
+              <a href="#contact"><i class="icon-location"></i> <span>Deixe seu contato</span></a>
+            </nav>
+
+        </div>
+        <div class="row">
+            <div id="div-login-area">
+            </div>
+        </div>
+
+        <div class="row">
+              <button onclick="clickloginarea()" style="width: 100%" class="btn btn-first"><div class="icon-user">Área do Gestor / Participante</div></button>
+        </div>
+      </div>
+
+
+
+      <!-- Begin About Us Section -->
+      <section class="ts-section ts-about grey-container" style="padding-top: 200px" id="about">
+        <div class="container">
+          <!-- Section Header -->
+          <header>
+            <div class="title"> 
+              <h2>O que é <span class="highlight">Imobi</span>?</h2>
+              <div class="line"><i class="icon-chart-bar"></i></div>
+            </div>
+            <p class="caption">A solução definitiva para obtenção de índices imobiliários</p>
+          </header>
+
+          <!-- First Article -->
+          <div class="row">
+            <!-- Second Article -->
+            <article class="col-md-10 col-md-offset-1">
+              <div class="box">
+                <div class="box-slider" data-cycle-fx="scrollHorz" data-cycle-timeout="2000" data-cycle-pager=".slider-pager">
+                  <img src="images/screens/submit.png" alt="">
+                  <img src="images/screens/report1.png" alt="">
+                  <img src="images/screens/report2.png" alt="">
+                  <img src="images/screens/report3.png" alt="">
+                  <div class="slider-pager"></div>
+                </div>
+              </div> 
+              <div>
+                <h4>Simples e Direto</h4>
+                Interface simples, onde as empresas de construção compartilham suas informações, de forma segura onde cada empresa tem acesso aos dados globais.
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+      <!-- End About Us Section --> 
+
+
+      <!-- Begin Services Section -->
+      <section class="ts-section ts-services grey-container"  id="services">
+        <div class="container">
+            <!-- Section Header -->
+            <header>
+              <div class="title">
+                <h2>O que <span class="highlight">Nós Fizemos</span></h2>
+                <div class="line"><i class="icon-code"></i></div>
+              </div>
+              <p class="caption">Saiba o que nós construímos em nossa plataforma.</p>
+            </header>
+            <div class="row">
+              <!-- First Article -->
+              <article class="columns col-xs-12 col-sm-6 col-md-4">
+                <div class="padder">
+                  <div class="front">
+                    <div class="big-icon"><i class="icon-key-1"></i></div>
+                    <h3>Segurança</h3>
+                    <p>Segurança no acesso e nas suas informações.</p>
+                    <a href="javascript:void(0)" class="flip-more">Leia mais</a>
+                  </div>
+                  <div class="back">
+                    <h3>Segurança</h3>
+                    A plataforma permite que compartilhe suas informações somente em escala global.
+                    O participante terá acesso as informações de sua empresa em comparação ao mercado global.
+                    <br>
+                    <a href="javascript:void(0)" class="flip-more">Voltar</a>
+                  </div>
+                </div>
+              </article>
+
+               <!-- Second Article -->
+              <article class="columns col-xs-12 col-sm-6 col-md-4">
+                <div class="padder">
+                  <div class="front">
+                    <div class="big-icon"><i class="icon-share-1"></i></div>
+                    <h3>Gestão de Participantes</h3>
+                    <p>Ferramenta sob medida para o gestor gerenciar seus recenseados.</p>
+                    <a href="javascript:void(0)" class="flip-more">Leia mais</a>
+                  </div>
+                  <div class="back">
+                    <h3>Gestão de Participantes</h3>
+                    Convide seus recenseados através de e-mail simples. você irá montar uma lista de participantes, onde receberão e-mail com link direto para o sistema.
+                    <br>
+                    <a href="javascript:void(0)" class="flip-more">Voltar</a>
+                  </div>
+                </div>
+              </article>
+
+               <!-- Third Article -->
+              <article class="columns col-xs-12 col-sm-6 col-md-4">
+                <div class="padder">
+                  <div class="front">
+                    <div class="big-icon"><i class="icon-calculator"></i></div>
+                    <h3>Censo imobiliário</h3>
+                    <p>Facilidade para o gestor coletar informações.</p>
+                    <a href="javascript:void(0)" class="flip-more">Leia mais</a>
+                  </div>
+                  <div class="back">
+                    <h3>Censo imobiliário</h3>
+                    Com o processo automatizado de censo, permite que em um espaço menor de tempo, apurar todas as informações.
+                    Através de nosso formulário de conferência, o recenseador pode filtrar as informações enviadas pelos participantes.
+                    <br>
+                    <a href="javascript:void(0)" class="flip-more">Voltar</a>
+                  </div>
+                </div>
+              </article>
+              <!-- First Article -->
+              <article class="columns col-xs-12 col-sm-6 col-md-4">
+                <div class="padder">
+                  <div class="front">
+                    <div class="big-icon"><i class="icon-chart-line"></i></div>
+                    <h3>Índice de Volume de Vendas</h3>
+                    <p>A dinâmica do mercado imobiliário a um click de distância.</p>
+                    <a href="javascript:void(0)" class="flip-more">Leia mais</a>
+                  </div>
+                  <div class="back">
+                    <h3>Índice de Volume de Vendas</h3>
+                    Com a mesma dinâmica do censo, o gestor pode obter informações do mercado imobiliário. Identificando assim vários indicadores do mercado e compartilhando com seus recenseados.
+                    <br>
+                    <a href="javascript:void(0)" class="flip-more">Voltar</a>
+                  </div>
+                </div>
+              </article>
+
+               <!-- Second Article -->
+              <article class="columns col-xs-12 col-sm-6 col-md-4">
+                <div class="padder">
+                  <div class="front">
+                    <div class="big-icon"><i class="icon-doc-2"></i></div>
+                    <h3>Relatórios</h3>
+                    <p>As informações que você precisa, da forma que necessita.</p>
+                    <a href="javascript:void(0)" class="flip-more">Leia Mais</a>
+                  </div>
+                  <div class="back">
+                    <h3>Relatórios</h3>
+                    O Gestor tem em mãos todas as informações de forma direta e formatada, de forma que fique fácil de interpretar.
+                    São mais de 40 relatórios disponíveis para o gestor, e vários disponíveis também para os recenseados.
+                    Todos são exportaveis em formato de Word, Excel e Pdf.
+                    <br>
+                    <a href="javascript:void(0)" class="flip-more">Voltar</a>
+                  </div>
+                </div>
+              </article>
+
+               <!-- Third Article -->
+              <article class="columns col-xs-12 col-sm-6 col-md-4">
+                <div class="padder">
+                  <div class="front">
+                    <div class="big-icon"><i class="icon-mobile"></i></div>
+                    <h3>Mobilidade</h3>
+                    <p>Mobilidade para o recenseado colaborar com as informações de onde estiver.</p>
+                    <a href="javascript:void(0)" class="flip-more">Leia mais</a>
+                  </div>
+                  <div class="back">
+                    <h3>Mobilidade</h3>
+                    Os formulários em que os participantes colaboram com suas informações, podem ser abertos de qualquer lugar em qualquer dispositivo.
+                    A praticidade acima de tudo.
+                    <br>
+                    <a href="javascript:void(0)" class="flip-more">Voltar</a>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+      </section>
+      <!-- End Services Section -->
+
+      <!-- Begin Word Proccess -->
+      <!--<section class="ts-section ts-timeline grey-container" id="work-process">
+        <div class="container">
+          &lt;!&ndash; Section Header &ndash;&gt;
+            <header>
+              <div class="title">
+                <h2>Work <span class="highlight">Process</span></h2>
+                <div class="line"><i class="icon-book-open"></i></div>
+              </div>
+              <p class="caption">We're working hard to create the the gorgeous design with full time customer care which suits for exactly you and your business. Life can't be simpler and happier without us.</p>
+            </header>
+            <div class="list-container">
+              <div class="hor-line"></div>
+              <ul class="timeline-list">
+                  <li>
+                    <i class="icon-search-1 icon-effect"></i>
+                    <div>
+                      <h4>Creative Research</h4>
+                      Nullam quis risus eget urna mollis ornare vel eu leo. Nullam quis risus eget urna mollis ornare vel eu leo.
+                    </div>
+                  </li>
+                   <li>
+                    <i class="icon-pencil"></i>
+                    <div>
+                      <h4>Scratch</h4>
+                      Nullam quis risus eget urna mollis ornare vel eu leo. Nullam quis risus eget urna mollis ornare vel eu leo.
+                    </div>
+                  </li>
+                   <li>
+                    <i class="icon-doc"></i>
+                    <div>
+                      <h4>Final Mockup</h4>
+                      Nullam quis risus eget urna mollis ornare vel eu leo. Nullam quis risus eget urna mollis ornare vel eu leo.
+                    </div>
+                  </li>
+                   <li>
+                    <i class="icon-photo"></i>
+                    <div>
+                      <h4>Design (PS)</h4>
+                      Nullam quis risus eget urna mollis ornare vel eu leo. Nullam quis risus eget urna mollis ornare vel eu leo.
+                    </div>
+                  </li>
+                   <li>
+                    <i class="icon-html5"></i>
+                    <div>
+                      <h4>HTML Coding</h4>
+                      Nullam quis risus eget urna mollis ornare vel eu leo. Nullam quis risus eget urna mollis ornare vel eu leo.
+                    </div>
+                  </li>
+                   <li>
+                    <i class="icon-wordpress"></i>
+                    <div>
+                      <h4>HTML to Wordpress</h4>
+                      Nullam quis risus eget urna mollis ornare vel eu leo. Nullam quis risus eget urna mollis ornare vel eu leo.
+                    </div>
+                  </li>
+                  <li>
+                    <i class="icon-wordpress-1"></i>
+                    <div>
+                      <h4>Hard Test</h4>
+                      Nullam quis risus eget urna mollis ornare vel eu leo. Nullam quis risus eget urna mollis ornare vel eu leo.
+                    </div>
+                  </li>
+              </ul>
+            </div>
+        </div>
+      </section>-->
+      <!-- End Word Proccess -->
+
+
+      <!-- Begin Team Section -->
+      <section class="ts-section ts-team" id="patrocinadores">
+        <div class="container">
+
+            <!-- Section Header -->
+            <header>
+              <div class="title"> 
+                <h2>Quem <span class="highlight">Acredita</span> na nossa plataforma</h2>
+                <div class="line">
+                  <i class="icon-star"></i>
+                </div>
+              </div>
+            </header>
+
+
+            <div class="row">
+                <h3>Apoio Institucional</h3>
+            </div>
+
+            <div class="row">
+
+                <!-- Col -->
+                <article class="profile col-xs-12 col-sm-6 col-md-3">
+                    <img src="images/patrocinadores/ADEMI.png" alt="caixa">
+                </article>
+
+
+                <!-- Col -->
+                <article class="profile col-xs-12 col-sm-6 col-md-3">
+                    <img src="images/patrocinadores/CRECI.png" alt="holcim">
+                </article>
+
+                <!-- Col -->
+                <article class="profile col-xs-12 col-sm-6 col-md-3">
+                    <img src="images/patrocinadores/FINDES.png" alt="nassau">
+                </article>
+
+                <!-- Col -->
+                <article class="profile col-xs-12 col-sm-6 col-md-3">
+                    <img src="images/patrocinadores/CBIC.png" alt="sebrae">
+                </article>
+            </div>
+
+
+            <div class="row">
+                <h3>Patrocinadores</h3>
+            </div>
+
+            <div class="row">
+
+              <!-- Col -->
+              <article class="profile col-xs-12 col-sm-6 col-md-3">
+                <img src="images/patrocinadores/CAIXA.png" alt="caixa">
+              </article>
+
+
+              <!-- Col -->
+              <article class="profile col-xs-12 col-sm-6 col-md-3">
+                  <img src="images/patrocinadores/HOLCIM.png" alt="holcim">
+              </article>
+
+              <!-- Col -->
+              <article class="profile col-xs-12 col-sm-6 col-md-3">
+                  <img src="images/patrocinadores/NASSAU.png" alt="nassau">
+               </article>
+
+                <!-- Col -->
+                <article class="profile col-xs-12 col-sm-6 col-md-3">
+                    <img src="images/patrocinadores/SEBRAE.png" alt="sebrae">
+                </article>
+            </div>
+
+
+
+
+
+
+          </div>
+      </section>
+      <section class="ts-section ts-team" id="realizadores">
+          <div class="container">
+
+              <!-- Section Header -->
+              <header>
+                  <div class="title">
+                      <h2>Quem <span class="highlight">Realiza</span> na nossa plataforma</h2>
+                      <div class="line">
+                          <i class="icon-lamp"></i>
+                      </div>
+                  </div>
+              </header>
+
+              <div class="row">
+
+                  <!-- Col -->
+                  <article class="profile col-xs-12 col-sm-6 col-md-4">
+                      <img src="images/realizadores/CENSO.png" alt="caixa">
+                  </article>
+
+
+                  <!-- Col -->
+                  <article class="profile col-xs-12 col-sm-6 col-md-4">
+                      <img src="images/realizadores/IVV.png" alt="holcim">
+                  </article>
+
+                  <!-- Col -->
+                  <article class="profile col-xs-12 col-sm-6 col-md-4">
+                      <img src="images/realizadores/SINDUSCONES.png" alt="nassau">
+                  </article>
+
+
+              </div>
+
+
+          </div>
+      </section>
+      <!--<section class="ts-section ts-team" id="team">
+
+      </section>-->
+      <!-- End Team Section -->
+
+
+
+
+
+      <!-- Begin Quando tiver notícias relacionadas colocar na página -->
+      <!--<section class="ts-section ts-news" id="news">
+
+        <div class="container">
+          &lt;!&ndash; Section Header &ndash;&gt;
+          <header>
+            <div class="title">
+              <h2>Breaking <span class="highlight">News</span></h2>
+              <div class="line"><i class="icon-doc-alt"></i></div>
+            </div>
+          </header>
+          <div class="row">
+            <div class="columns col-sm-6 col-md-6">
+              <div class="box col-sm-12 col-md-6">
+                <div class="date">OCT <span>23</span></div>
+                <img src="images/about/about.jpg" alt="">
+              </div>
+              <div class="col-sm-12 col-md-6">
+                <h3>News Title Goes Here</h3>
+                Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Nulla quis lorem ut libero.Vivamus magna justo, lacinia eget consectetur sed.
+              </div>
+            </div>
+            <div class="columns col-sm-6 col-md-6">
+              <div class="box col-sm-12 col-md-6">
+                <div class="date">OCT <span>23</span></div>
+                <img src="images/about/about.jpg" alt="">
+              </div>
+              <div class="col-sm-12 col-md-6">
+                <h3>News Title Goes Here</h3>
+                Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Nulla quis lorem ut libero.Vivamus magna justo, lacinia eget consectetur sed.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>-->
+      <!-- End Latest News -->
+
+      
+      <!-- Begin Contact -->
+      <section class="ts-section ts-contact grey-container" id="contact">
+        
+        <div class="container">
+          <!-- Section Header -->
+          <header>
+            <div class="title">
+              <h2>Deixe seu <span class="highlight">Contato</span></h2>
+              <div class="line"><i class="icon-mail"></i></div>
+            </div>
+            <p class="caption">
+              Deixe seu e-mail que iremos te contatar para contar mais a respeito de nossa solução.
+            </p>
+          </header>
+         
+          <div class="row">
+            <form id="form-contact">
+              <div class="col-sm-6">
+                <input placeholder="Seu nome" type="text" id="contato-nome">
+                <input placeholder="Seu email" type="text" id="contato-email">
+              </div>
+              <div class="col-sm-6">
+                <textarea placeholder="Seu recado, ou questionamento... Fique a vontade!" id="contato-mensagem"></textarea>
+              </div>
+              <button class="btn btn-first" type="submit" id="btn-enviar-contato">Enviar</button>
+              <div class="row" id="msg-contato-enviado">
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+      <!-- End Contact -->
+
+      <!-- Begin Footer -->
+      <div class="clearfix"></div>
+      <section id="footer">
+        <div class="container">
+          <!--<p>
+            <a href="#"><i class="icon-facebook"></i></a>
+            <a href="#"><i class="icon-twitter"></i></a>
+            <a href="#"><i class="icon-linkedin"></i></a>
+            <a href="#"><i class="icon-dribbble-2"></i></a>
+            <a href="#"><i class="icon-pinterest-1"></i></a>
+          </p>-->
+          2014  Sistema Imobi
+        </div>
+      </section>
+      <!-- End Footer -->
+    </div>
+    <!-- End Wrapper -->
+
+
+    <div style="visibility: hidden">
+        <div class="row" id="login-area" >
+            <hr/>
+            <form id="form-login">
+                <div id="login-fields">
+                    <div class="col-xs-8 col-xs-offset-2">
+                        <input type="text"  placeholder="Usuário ou email" id="username" name="username">
+                    </div>
+                    <div class="col-xs-8 col-xs-offset-2">
+                        <input type="password" placeholder="Senha" id="password" name="password">
+                    </div>
+                    <div class="row" >
+                        <button class="col-xs-8 col-xs-offset-2  btn-success"  type="submit" id="sign-in">
+                            <div class="icon-key-1">
+                                Entrar
+                            </div>
+                        </button>
+                    </div>
+                </div>
+                <div id="forgot-password-fields">
+                    <div class="col-xs-8 col-xs-offset-2">
+                        <input type="text"  placeholder="Email da conta" id="email-forgot" name="email-forgot">
+                    </div>
+                    <div class="row" >
+                        <button class="col-xs-8 col-xs-offset-2  btn-success"  type="submit" id="forgot-btn">
+                            <div class="icon-lifebuoy">
+                                Recuperar a Senha
+                            </div>
+                        </button>
+                    </div>
+                </div>
+                <div class="row" >
+                    <p></p>
+                </div>
+            </form>
+            <div class="row" >
+                <button class="col-xs-8 col-xs-offset-2  btn-danger"  type="button" id="forget-password" onclick="clickforgotarea()">
+                    Esqueci minha senha
+                </button>
+            </div>
+            <div class="row">
+                <p></p>
+            </div>
+            <div class="row" id="div-msg-login"></div>
+        </div>
+        <div class="row" id="div-msg-contato"></div>
+    </div>
+
+
+    <!-- Begin Javascript -->
+    <script src="js/jquery-1.9.1.js"></script>
+    <script src="js/plugins/migrate.js"></script>
+
+    <!-- Theme Plugins -->
+    <script src="js/plugins/jquery.placeholder.js"></script>
+    <script src="js/plugins/smooth-scroll.js"></script>
+    <script src="js/plugins/jquery.parallax-1.1.3.js"></script>
+    <script src="js/plugins/jquery.isotope.js"></script>
+    <script src="js/plugins/waypoints.min.js"></script>
+    <script src="js/plugins/scrollTo.min.js"></script>
+    <script src="js/plugins/jquery.PageScroll2id.js"></script>
+    <script src="js/plugins/jquery.mousewheel-3.0.6.pack.js"></script>
+    <script src="js/plugins/jquery.colorbox-min.js"></script>
+    <script src="js/plugins/jquery.jcycle2.js"></script>
+    <script src="js/plugins/jquery.xdomainajax.js"></script>
+    
+
+    <!-- Theme Global Scripts -->
+    <script src="js/global-scripts.js"></script>
+    <script src="js/main.js"></script>
+
+  </body>
+</html>
+
+
