@@ -33,7 +33,7 @@ $(document).ready(function () {
 	});
 
 
-    var urlapp = "http://app.imobi.ind.br/";
+    var urlapp = "http://app.imobi.org.br/";
 
 
     $("#forgot-btn").click(function (event) {
