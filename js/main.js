@@ -32,8 +32,7 @@ $(document).ready(function () {
 	    }
 	});
 
-
-    var urlapp = 'http://app.' + window.location.hosname;
+    var urlapp = 'http://app.';
 
 
     $("#forgot-btn").click(function (event) {
@@ -53,10 +52,10 @@ $(document).ready(function () {
             divmsglogin.empty();
 
 
-            $.getJSON(urlapp+ "/Account/RecoverPassword" + "?jsoncallback=?", {
+            $.getJSON(urlapp+ window.location.host  +"/Account/RecoverPassword" + "?jsoncallback=?", {
                 tags: "jquery",
                 email: email_value,
-                urlauth: urlapp,
+                urlauth: urlapp+ window.location.host ,
                 tagmode: "any",
                 format: "json"
             }, function (data) {
@@ -107,12 +106,12 @@ $(document).ready(function () {
             divmsglogin.empty();
 
 
-            $.getJSON(urlapp + "/Account/Contato" + "?jsoncallback=?", {
+            $.getJSON(urlapp + window.location.host + "/Account/Contato" + "?jsoncallback=?", {
                 tags: "jquery",
                 Nome: nome_value,
                 email: email_value,
                 conteudo : contato_mensagem_value ,
-                urlauth: urlapp,
+                urlauth: urlapp + window.location.host,
                 GER_COD : 1,
                 tagmode: "any",
                 format: "json"
@@ -191,7 +190,7 @@ $(document).ready(function () {
             })
         });*/
 
-        $.getJSON(urlapp + '/Account/LogoffExt' + "?jsoncallback=?", {
+        $.getJSON(urlapp + window.location.host+ '/Account/LogoffExt' + "?jsoncallback=?", {
          tags: "jquery",
          tagmode: "any",
          format: "json"
@@ -200,7 +199,7 @@ $(document).ready(function () {
          });
 
 
-        $.getJSON(urlapp + '/Account/LogonExt' + "?jsoncallback=?", {
+        $.getJSON(urlapp + window.location.host  + '/Account/LogonExt' + "?jsoncallback=?", {
             tags: "jquery",
             username: username_value,
             password: password_value,
@@ -210,7 +209,7 @@ $(document).ready(function () {
             if (data.mensagem != "") {
                 divmsglogin.append("<div style=\"color:red;font-weight: bolder\" class=\"col-xs-12 col-xs-offset-5\">" + data.mensagem + "</div>");
             } else {
-                window.location.replace(urlapp);
+                window.location.replace(urlapp + window.location.host);
             }
         });
 
