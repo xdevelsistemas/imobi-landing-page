@@ -2582,3 +2582,55 @@ a:visited   {
 }
 
 
+
+/* ----------------------------------------------------------------------
+  TESTIMONIALS
+--------------------------------------------------------------------- */
+
+#carousel-testimonials{
+
+}
+
+#carousel-testimonials .carousel-caption{
+  position: relative;
+  left: 0;
+  right: 0;
+  padding-bottom: 0;
+}
+
+#carousel-testimonials .carousel-caption h3{
+  font-size: 22px;
+  line-height: 26px;
+  margin: 18px 0 8px 0;
+  color: black;
+  text-shadow: none;
+}
+
+#carousel-testimonials .carousel-caption p{
+  font-size: 18px;
+  line-height: 26px;
+  margin: 0 0 15px 0;
+  color: black;  text-shadow: none;
+  font-weight: initial;
+}
+
+#carousel-testimonials .carousel-control{
+  background: none;
+}
+#carousel-testimonials .carousel-indicators{
+  margin-top: 0;
+  position: relative;
+}
+#carousel-testimonials .carousel-indicators li{
+  background-color: rgb(180, 180, 180);
+  border-radius: 12px;
+  padding: 10px;
+}
+#carousel-testimonials .carousel-indicators li.active{
+  background-color: #006699;
+}
+
+.form-control.error-input{
+  background-color: red;
+  color: #ffffff;
+}

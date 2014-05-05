@@ -16,6 +16,9 @@
     <!-- Importing Google Font "Merriweather"-->
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700,800" rel="stylesheet" type="text/css">
 
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+
     <!-- CSS -->
     <link href="css/styles/style-blue.css" rel="stylesheet">
     <link href="css/loader.css" rel="stylesheet">
@@ -85,8 +88,10 @@
             </div>
             <nav id="nav">
               <!--<a href="#"><i class="icon-home"></i><span>Entrar</span> </a>-->
-              <a href="#about" class="link-active"><i class="icon-user"></i> <span>O que é Imobi?</span></a>
+              <a href="#home" class="link-active"><i class="icon-user"></i> <span>Home</span></a>
+              <a href="#about"><i class="icon-user"></i> <span>O que é Imobi?</span></a>
               <a href="#services" class="services"><i class="icon-tools"></i> <span>O que fizemos</span></a>
+              <a href="#testimonials"><i class="icon-tools"></i> <span>Depoimentos</span></a>
               <a href="#patrocinadores"><i class="icon-users"></i> <span>Quem Acredita</span></a>
               <a href="#realizadores"><i class="icon-users"></i> <span>Quem realiza</span></a>
               <!--<a href="#team"><i class="icon-users"></i> <span>Quem desenvolve</span></a>-->
@@ -105,9 +110,42 @@
       </div>
 
 
+      <!-- Home -->
+      <section class="ts-section ts-contact grey-container" id="home" style="padding-top: 120px;">
+        <div class="container">
+          <div class="col-sm-6">
+            <iframe src="//www.youtube.com/embed/uGxMbXS2uR4" frameborder="0" allowfullscreen style="width: 100%; min-height: 315px;"></iframe>
+          </div>
+          <div class="col-sm-6">
+            <form id="form-agendar" role="form">
+              <div class="form-group">
+                <input placeholder="Seu nome*" type="text" id="agendar-nome" name="nome">
+              </div>
+              <div class="form-group">
+                <input placeholder="Email*" type="text" id="agendar-email" name="email">
+              </div>
+              <div class="form-group">
+                <input placeholder="Telefone*" type="text" id="agendar-telefone" name="telefone">
+              </div>
+              <div class="form-group">
+                <select class="form-control" id="agendar-estado" name="estado" placeholder="Estado" >
+                  <option value="" disabled selected>Estado</option>
+                  <option>ES</option>
+                  <option>SP</option>
+                  <option>RJ</option>
+                </select>
+              </div>
+              <button class="btn btn-first" type="submit" id="btn-enviar-agendar">Quero Solicitar Demonstração</button>
+              <div class="row" id="msg-agendar-enviado"></div>
+            </form>
+          </div>
+        </div>
+      </section>
+      <!-- End Home -->
+
 
       <!-- Begin About Us Section -->
-      <section class="ts-section ts-about grey-container" style="padding-top: 200px" id="about">
+      <section class="ts-section ts-about grey-container" id="about">
         <div class="container">
           <!-- Section Header -->
           <header>
@@ -122,15 +160,6 @@
           <div class="row">
             <!-- Second Article -->
             <article class="col-md-10 col-md-offset-1">
-              <div class="box">
-                <div class="box-slider" data-cycle-fx="scrollHorz" data-cycle-timeout="2000" data-cycle-pager=".slider-pager">
-                  <img src="images/screens/submit.png" alt="">
-                  <img src="images/screens/report1.png" alt="">
-                  <img src="images/screens/report2.png" alt="">
-                  <img src="images/screens/report3.png" alt="">
-                  <div class="slider-pager"></div>
-                </div>
-              </div> 
               <div>
                 <h4>Simples e Direto</h4>
                 Interface simples, onde as empresas de construção compartilham suas informações, de forma segura onde cada empresa tem acesso aos dados globais.
@@ -143,7 +172,7 @@
 
 
       <!-- Begin Services Section -->
-      <section class="ts-section ts-services grey-container"  id="services">
+      <section class="ts-section ts-services grey-container"  id="services" style="padding-top: 12px">
         <div class="container">
             <!-- Section Header -->
             <header>
@@ -270,6 +299,72 @@
       </section>
       <!-- End Services Section -->
 
+
+      <!-- Begin Testiomonials -->
+      <section class="ts-section ts-testimonials grey-container" style="padding-top: 12px" id="testimonials">
+        <div class="container">
+          <!-- Section Header -->
+          <header>
+            <div class="title"> 
+              <h2><span class="highlight">Depoimentos</span></h2>
+              <div class="line"><i class="icon-chart-bar"></i></div>
+            </div>
+            <p class="caption"></p>
+          </header>
+
+          <!-- First Article -->
+          <div class="row">
+            <!-- Second Article -->
+            <article class="col-md-10 col-md-offset-1">
+              <div id="carousel-testimonials" class="carousel slide" data-ride="carousel">
+                                <!-- Wrapper for slides -->
+                <div class="carousel-inner">
+                  
+                  <div class="item active">
+                    <iframe width="560" height="315" src="//www.youtube.com/embed/uGxMbXS2uR4" frameborder="0" allowfullscreen></iframe>
+                    <div class="carousel-caption">
+                      <h3>The slide label</h3>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <iframe width="560" height="315" src="//www.youtube.com/embed/uGxMbXS2uR4" frameborder="0" allowfullscreen></iframe>
+                    <div class="carousel-caption">
+                      <h3>The slide label</h3>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <iframe width="560" height="315" src="//www.youtube.com/embed/uGxMbXS2uR4" frameborder="0" allowfullscreen></iframe>
+                    <div class="carousel-caption">
+                      <h3>The slide label</h3>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                  </div>
+                  
+                </div>
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                  <li data-target="#carousel-testimonials" data-slide-to="0" class="active"></li>
+                  <li data-target="#carousel-testimonials" data-slide-to="1"></li>
+                  <li data-target="#carousel-testimonials" data-slide-to="2"></li>
+                </ol>
+                <!-- Controls -->
+                  <a class="left carousel-control" href="#carousel-testimonials" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                  </a>
+                  <a class="right carousel-control" href="#carousel-testimonials" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                  </a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+      <!-- End Testiomonials --> 
+
+
       <!-- Begin Word Proccess -->
       <!--<section class="ts-section ts-timeline grey-container" id="work-process">
         <div class="container">
@@ -341,7 +436,7 @@
 
 
       <!-- Begin Team Section -->
-      <section class="ts-section ts-team" id="patrocinadores">
+      <section class="ts-section ts-team" id="patrocinadores" style="padding-top: 12px;">
         <div class="container">
 
             <!-- Section Header -->
@@ -419,7 +514,7 @@
 
           </div>
       </section>
-      <section class="ts-section ts-team" id="realizadores">
+      <section class="ts-section ts-team" id="realizadores" style="padding-top: 12px;">
           <div class="container">
 
               <!-- Section Header -->
@@ -504,7 +599,7 @@
 
       
       <!-- Begin Contact -->
-      <section class="ts-section ts-contact grey-container" id="contact">
+      <section class="ts-section ts-contact grey-container" id="contact" style="padding-top: 12px;">
         
         <div class="container">
           <!-- Section Header -->
@@ -606,6 +701,10 @@
 
     <!-- Begin Javascript -->
     <script src="js/jquery-1.9.1.js"></script>
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+
     <script src="js/plugins/migrate.js"></script>
 
     <!-- Theme Plugins -->
@@ -628,5 +727,3 @@
 
   </body>
 </html>
-
-
