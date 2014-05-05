@@ -47,7 +47,7 @@ $(document).ready(function () {
             email.addClass('error-input');
 
             divmsglogin.empty();
-            divmsglogin.append("<div style=\"color:red;font-weight: bolder\" class=\"col-xs-12 col-xs-offset-5\">faltam campos requeridos</div>");
+            divmsglogin.append("<div style=\"color:red;font-weight: bolder\" class=\"col-xs-12\">faltam campos requeridos</div>");
         } else {
             divmsglogin.empty();
 
@@ -71,7 +71,7 @@ $(document).ready(function () {
                     text_msg = "erro ao recuperar o acesso";
                 }
 
-                divmsglogin.append("<div style=\"color:" + cor + ";font-weight: bolder\" class=\"col-xs-12 col-xs-offset-5\">" + data.mensagem + "</div>");
+                divmsglogin.append("<div style=\"color:" + cor + ";font-weight: bolder\" class=\"col-xs-12\">" + data.mensagem + "</div>");
                 return false;
             });
 
@@ -101,7 +101,7 @@ $(document).ready(function () {
             email.addClass('error-input');
             nome.addClass('error-input');
             divmsglogin.empty();
-            divmsglogin.append("<div style=\"color:red;font-weight: bolder\" class=\"col-xs-12 col-xs-offset-5\">faltam campos requeridos</div>");
+            divmsglogin.append("<div style=\"color:red;font-weight: bolder\" class=\"col-xs-12\">faltam campos requeridos</div>");
         } else {
             divmsglogin.empty();
 
@@ -127,11 +127,69 @@ $(document).ready(function () {
                     text_msg = "erro ao recuperar o acesso";
                 }
 
-                divmsglogin.append("<div style=\"color:" + cor + ";font-weight: bolder\" class=\"col-xs-12 col-xs-offset-5\">" + data.mensagem + "</div>");
+                divmsglogin.append("<div style=\"color:" + cor + ";font-weight: bolder\" class=\"col-xs-12\">" + data.mensagem + "</div>");
                 return false;
             });
 
-            
+        }
+
+
+        event.preventDefault();
+    });
+
+    //FORMULÁRIO AGENDAR
+    $("#btn-enviar-agendar").click(function (event) {
+        var nome = $('#agendar-nome');
+        var nome_value = nome.val();
+
+        var email = $('#agendar-email');
+        var email_value = email.val();
+
+        var telefone = $('#agendar-telefone');
+        var telefone_value = telefone.val();
+
+        var estado = $('#agendar-estado');
+        var estado_value = estado.val();
+
+        var divmsglogin = $('#msg-agendar-enviado');
+
+        fieldagendarreset();
+
+        if (email_value == "" || nome_value == "") {
+            email.addClass('error-input');
+            nome.addClass('error-input');
+            telefone.addClass('error-input');
+            estado.addClass('error-input');
+            divmsglogin.empty();
+            divmsglogin.append("<div style=\"color:red;font-weight: bolder\" class=\"col-xs-12\">faltam campos requeridos</div>");
+        } else {
+            divmsglogin.empty();
+
+            $.getJSON(urlapp + window.location.host + "/Account/Contato" + "?jsoncallback=?", {
+                tags: "jquery",
+                Nome: nome_value,
+                email: email_value,
+                telefone: telefone_value,
+                estado: estado_value,
+                urlauth: urlapp + window.location.host,
+                GER_COD : 1,
+                tagmode: "any",
+                format: "json"
+            }, function (data) {
+                var text_msg;
+                if (data.mensagem != "") {
+                    var cor = "red";
+                    if (data.mensagem == "e-mail enviado com sucesso") {
+                        cor = "green"
+                    }
+                    text_msg = data.mensagem;
+                } else {
+                    text_msg = "erro ao recuperar o acesso";
+                }
+
+                divmsglogin.append("<div style=\"color:" + cor + ";font-weight: bolder\" class=\"col-xs-12 col-xs-offset-5\">" + data.mensagem + "</div>");
+                return false;
+            });
 
         }
 
@@ -242,6 +300,14 @@ function fieldcontactreset() {
     $('#contato-nome').removeClass('error-input');
     $('#contato-email').removeClass('error-input');
     $('#contato-mensagem').removeClass('error-input');   
+}
+
+function fieldagendarreset() {
+    $('#msg-agendar-enviado').empty();
+    $('#agendar-nome').removeClass('error-input');
+    $('#agendar-email').removeClass('error-input');
+    $('#agendar-telefone').removeClass('error-input');   
+    $('#agendar-estado').removeClass('error-estado');   
 }
 
 function clickforgotarea() {
