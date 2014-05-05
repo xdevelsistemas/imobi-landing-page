@@ -2629,3 +2629,11 @@ a:visited   {
 #carousel-testimonials .carousel-indicators li.active{
   background-color: #006699;
 }
+
+
+
+
+.form-control.error-input{
+  background-color: red;
+  color: #ffffff;
+}
