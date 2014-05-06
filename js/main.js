@@ -187,7 +187,7 @@ $(document).ready(function () {
                     text_msg = "erro ao recuperar o acesso";
                 }
 
-                divmsglogin.append("<div style=\"color:" + cor + ";font-weight: bolder\" class=\"col-xs-12 col-xs-offset-5\">" + data.mensagem + "</div>");
+                divmsglogin.append("<div style=\"color:" + cor + ";font-weight: bolder\" class=\"col-xs-12\">" + data.mensagem + "</div>");
                 return false;
             });
 
